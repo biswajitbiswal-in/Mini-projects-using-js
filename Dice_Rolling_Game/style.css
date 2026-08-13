@@ -1,0 +1,48 @@
+.dice{
+    height:200px;
+    width:200px;
+    
+    border-radius: 20%;
+    display: flex;
+ justify-content: center;
+ align-items: center;
+    font-size: 40px;
+    background: #FFFFFF;
+color: #111111;
+    
+}
+body{
+     background: linear-gradient(135deg, #141E30, #243B55);
+    margin:0;
+    min-height: 100vh;
+   display:flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+button{
+    margin-top: 20px;
+    height: 30px;
+    width: 120px;
+   border-radius: 5%;
+   background-color: blueviolet;
+   color:aliceblue
+}
+.rolling {
+    animation: roll 2s linear;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(540deg);
+    }
+
+    100% {
+        transform: rotate(1080deg);
+    }
+}
+
